@@ -1,2 +1,2 @@
 # Image-Processing
-My online image processing coourse codees in Python
+My online image processing course codes in Python
