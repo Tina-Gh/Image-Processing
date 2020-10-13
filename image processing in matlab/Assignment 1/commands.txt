@@ -1,0 +1,21 @@
+row = uint8(0:255);
+im = repmat(row, 100, 1);
+imshow(im);
+
+v = [1, 3];
+y = countGL_26(im, v)
+
+...............................................................
+stem(0:255, countGL_26(im, 0:256))
+set(gca, 'xlim', [0, 255], 'ylim', [0, 150])
+title('Assignment 1', 'fontsize', 16)
+xlabel('Gray level')
+ylabel('No. Pixels')
+...............................................................
+(Part c):
+
+>> v = [0, 256];
+>> N = countGL_26(im, b);
+
+(similar to: size(im, 1) * size(im, 2))
+...............................................................

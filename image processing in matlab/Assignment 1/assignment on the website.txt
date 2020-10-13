@@ -1,0 +1,47 @@
+Part (a):
+
+function y = countGL_26(im, v)
+%countGL_26 function should return as output a 1x(N-1) row vector, y, where
+%y(i) is the total number of pixels in im that satisfy: v(i) ≤ im < v(i+1).
+%
+%countGL_26(im, v), where countGL_26 is a function that accepts a uint8 image matrix
+%called im and a 1xN vector v of strictly increasing gray-level values and
+%N is the length of vector v.
+    
+    length_im = size(im);
+    length_v = size(v);
+    y = zeros(1, length_v(2) - 1);
+    
+    for i = 1:1:length_v(2)-1 %or: length_v(2) = length(v)
+        
+        count = 0;
+        for j = 1:1:length_im(1) %search in matrix "im". %or: length_im(1) = size(im, 1)
+            for r = 1:1:length_im(2) %or: length_im(2) = size(im, 2)
+                if (im(j, r) >= v(i)) && (im(j, r) < v(i+1))
+                    count = count + 1; %or: y(1, i) = y(1, i) + 1
+                end
+            end
+        end
+        
+        y(i) = count;
+    end
+end
+
+****************************************************************************************************
+
+Part (b):
+
+The image file is uploaded as "1b_26.tif".
+
+****************************************************************************************************
+
+Part (c):
+
+v = [0, 256];
+N = countGL_26(im, v);
+
+****************************************************************************************************
+
+Part (d):
+
+Group-26 members: Tina Gholami, Andrew Ishak, Lichuan Zhang
