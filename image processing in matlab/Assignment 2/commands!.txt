@@ -1,0 +1,54 @@
+(b):
+
+im = imread('rice.png');
+T = intermeans_26(im);
+
+>> 0.5137
+************************************
+(c):
+
+bw = im2bw(im, T);
+figure(2), imshow(bw);
+
+>> binary_rice.tif
+************************************
+(c):
+
+some grains have gray levels below the threshold. Therefore, after biniraziation, they will be missed.
+
+B(i, j) = {1: I(i, j)>=T  And 0: I(i, j)<T} 
+
+The missed grains are the ones that lie within I(i, j)<T in the original "rice.png" image.
+(i.e. they are kind of light, but not pure white and aslo, they are less than the threshold)
+Therefore, such grains are mapped to 0 (i.e. pure black, which is the same as the background).
+************************************
+(d):
+
+bwlabel: [im, N] = bwlabel(bw) where N is the number of connected components (8-connected, i.e. pixels that their edges or corners touch) in binary image bw.
+
+[label_im, number_rice] = bwlabel(bw);
+number_rice
+
+>> 151
+************************************
+(e):
+
+bwareaopen: bw2 = bwareaopen(bw, p) this function removes all connected components (objects) that have fewer than p pixels from the binary image bw, producing another binary image, BW2. This operation is known as an area opening.
+Therefore, the larger the p, the more likly it is for the bwareaopen function to remove more noise in the image bw and result in a more denoised image bw2.
+
+p = 5;
+bw2 = bwareaopen(bw, p);
+figure(3), imshow(bw2)
+
+>> denoised_rice.tif
+
+[denoised_label_im, number_denoised] = bwlabel(bw2);
+number_denoised
+
+>> 97
+************************************
+Group names: 
+
+Tina Gholami: 251190343
+Andrew Ishak: 250968332
+Lichuan Zhang: 251189437
