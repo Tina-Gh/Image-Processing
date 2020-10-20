@@ -8,14 +8,14 @@
 - im = imread('pout.tif');
 - im = iminfo('pout.tif');
 - im = imwrite(im, 'pout.tif');
-
+***
 - figure(1), imshow(im);
 - colorbar
 
 - impixelinfo
 - imdistline
 - improfile()
-<br>
+
 - mean2(im)
 - std2(im)
 <br>
