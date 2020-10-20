@@ -8,8 +8,9 @@
 - im = imread('pout.tif');
 - im = iminfo('pout.tif');
 - im = imwrite(im, 'pout.tif');
-
+<hr>
 - figure(1), imshow(im);
+- 
 
 
 
