@@ -69,9 +69,9 @@ Assignment 2: (T = intermeans_26(im);)
   figure(3), imshow(bw2)
   >> denoised_rice.tif (-> bw2 = bwareaopen(bw, p) this function removes all connected components (objects) that have fewer than p pixels from the binary image bw, producing                            another binary image, BW2. This operation is known as an area opening. Therefore, the larger the p, the more likly it is for the bwareaopen                                    function to remove more noise in the image bw and result in a more denoised image bw2.)
   
-  - [denoised_label_im, number_denoised] = bwlabel(bw2);
-    number_denoised
-    >> 97
+- [denoised_label_im, number_denoised] = bwlabel(bw2);
+  number_denoised
+  >> 97
 
 #### Module 4:
 
