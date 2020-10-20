@@ -21,11 +21,14 @@
 - impixelinfo
 - imdistline
 - improfile()
+
 **
+
 - mean2(im)
 - std2(im)
 
-***Assignment 1: (y = countGL_26(im, v))
+** 
+Assignment 1: (y = countGL_26(im, v))
 
 - row = uint8(0:255); (-> create an uint8 image (gray-level image))
 
