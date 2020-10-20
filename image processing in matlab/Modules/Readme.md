@@ -42,8 +42,39 @@ Assignment 1: (y = countGL_26(im, v))
 
 #### Module 3:
 
+- ([H, D] = )imhist(im); (-> plot the Histogram of im)
+
+***
+
+- th = graythresh(im); (-> finds the threshold for further binarization)
+- bw = im2bw(im, th); (-> converts gray-level image to a binary image (= Binarization))
+
+***
+Assignment 2: (T = intermeans_26(im);)
+
+- im = imread('rice.png');
+  T = intermeans_26(im);
+  >> 0.5137
+  
+- bw = im2bw(im, T);
+  figure(2), imshow(bw); 
+  >> binary_rice.tif (-> some grains have gray levels below the threshold. Therefore, after biniraziation, they will be missed.)
+  
+- [label_im, number_rice] = bwlabel(bw);
+  number_rice
+  >> 151 (-> [im, N] = bwlabel(bw) where N is the number of connected components (8-connected, i.e. pixels that their edges or corners touch) in binary image bw.)
+
+- p = 5;
+  bw2 = bwareaopen(bw, p);
+  figure(3), imshow(bw2)
+  >> denoised_rice.tif (-> bw2 = bwareaopen(bw, p) this function removes all connected components (objects) that have fewer than p pixels from the binary image bw, producing                            another binary image, BW2. This operation is known as an area opening. Therefore, the larger the p, the more likly it is for the bwareaopen                                    function to remove more noise in the image bw and result in a more denoised image bw2.)
+  
+  - [denoised_label_im, number_denoised] = bwlabel(bw2);
+    number_denoised
+    >> 97
 
 #### Module 4:
+
 - im2 = a*im + b; (-> point operation)
 - imcontrast (-> Window & Level)
 
