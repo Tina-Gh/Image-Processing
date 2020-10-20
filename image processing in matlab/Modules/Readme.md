@@ -1,9 +1,7 @@
 ## Modules:
 <hr>
 #### Module 1: 
-
 --
-<hr>
 #### Module 2:
 
 - im = imread('pout.tif');
@@ -29,11 +27,9 @@
 - v = [0, 256]
   N = countGL_26(im, b);
 
-<hr>
 #### Module 3:
 
 
-<hr>
 #### Module 4:
 - im2 = a*im + b; (-> point operation)
 - imcontrast (-> Window & Level)
