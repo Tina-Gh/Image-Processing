@@ -1,7 +1,7 @@
 ## Modules:
 <br>
 
-#### -Module 1: 
+#### - Module 1: 
 
 #### -Module 2:
 
