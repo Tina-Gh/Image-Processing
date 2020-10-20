@@ -14,7 +14,7 @@
 - figure(1), imshow(im);
 - colorbar
 
-
+  
 - impixelinfo
 - imdistline
 - improfile()
