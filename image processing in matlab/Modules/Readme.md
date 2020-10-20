@@ -1,7 +1,10 @@
 ## Modules:
-<hr>
+
+
 #### Module 1: 
+
 --
+
 #### Module 2:
 
 - im = imread('pout.tif');
