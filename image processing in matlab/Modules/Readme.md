@@ -38,6 +38,8 @@ Assignment 1: (y = countGL_26(im, v))
 - v = [0, 256];
   N = countGL_26(im, b); (-> Number of gray levels)
   >> size(im, 1) * size(im, 2)
+  
+<br>
 #### Module 3:
 
 - ([H, D] = )imhist(im); (-> plot the Histogram of im)
@@ -71,6 +73,7 @@ Assignment 2: (T = intermeans_26(im);)
   number_denoised
   >> 97
 
+<br>
 #### Module 4:
 
 - im2 = a*im + b; (-> point operation)
@@ -84,8 +87,9 @@ Assignment 3: (im2 = myequalize_26(im);)
 - im = imread('pout.tif');
   im2 = myequalize_26(im);
   >> ("3b_26.tif") (-> image equalization algorithm, similar to "histeq(im)")
-  
-#### Module 4:
+
+<br>  
+#### Module 5:
 
 .
 
