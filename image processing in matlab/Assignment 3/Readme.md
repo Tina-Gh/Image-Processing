@@ -1,3 +1,3 @@
 ## Assignment 3
 
-Histogram Equalization
+<strong>Histogram Equalization</strong>
