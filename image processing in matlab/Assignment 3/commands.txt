@@ -1,0 +1,22 @@
+(a):
+
+(copy and paste the code.)
+
+************************************
+(b):
+
+im = imread('pout.tif');
+im2 = myequalize_26(im);
+subplot(121), imshow(im);
+title('The original image');
+subplot(122), imshow(im2);
+title('The equalized image');
+
+("3b_26.tif")
+
+************************************
+Group names: 
+
+Tina Gholami: 251190343
+Andrew Ishak: 250968332
+Lichuan Zhang: 251189437
