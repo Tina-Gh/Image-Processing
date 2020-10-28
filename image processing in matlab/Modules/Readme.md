@@ -79,7 +79,8 @@ Assignment 2: (T = intermeans_26(im);)
 - im2 = a*im + b; (-> point operation)
 - imcontrast (-> Window & Level in an interactive way)
 - im2 = histeq(im) (-> histogram equalization)
-- match.m (uploaded by prof. Ladak -> for histogram matching)
+- match.m (in practice problems uploaded by prof. Ladak -> for histogram matching)
+- question2_b.m (in practice problems written by me -> Window & Level algorithm! to enhance an image contrast!)
 
 ***
 Assignment 3: (im2 = myequalize_26(im);)
