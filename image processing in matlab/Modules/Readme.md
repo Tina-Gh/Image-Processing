@@ -74,7 +74,7 @@ Assignment 2: (T = intermeans_26(im);)
 #### Module 4:
 
 - im2 = a*im + b; (-> point operation)
-- imcontrast (-> Window & Level)
+- imcontrast (-> Window & Level in an interactive way)
 - im2 = histeq(im) (-> histogram equalization)
 - match.m (uploaded by prof. Ladak -> for histogram matching)
 
