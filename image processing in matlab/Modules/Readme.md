@@ -92,7 +92,16 @@ Assignment 3: (im2 = myequalize_26(im);)
 
 #### Module 5:
 
-.
-
+- im1 = double(im1);
+  im2 = double(im2);
+  im3 = im1 + im2; (-> Do the math part)
+  im3 = mat2gray(im3);
+  im3 = im2uint8(im3);
+  
+  
+  
+  
+  
+  
 
 
