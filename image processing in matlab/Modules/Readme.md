@@ -75,5 +75,15 @@ Assignment 2: (T = intermeans_26(im);)
 
 - im2 = a*im + b; (-> point operation)
 - imcontrast (-> Window & Level)
+- im2 = histeq(im) (-> histogram equalization)
+- match.m (uploaded by prof. Ladak -> for histogram matching)
+
+***
+Assignment 3: (im2 = myequalize_26(im);)
+  
+ -im = imread('pout.tif');
+  im2 = myequalize_26(im);
+  >> ("3b_26.tif") (-> image equalization algorithm, similar to "histeq(im)")
+
 
 
