@@ -81,7 +81,7 @@ Assignment 2: (T = intermeans_26(im);)
 ***
 Assignment 3: (im2 = myequalize_26(im);)
   
- -im = imread('pout.tif');
+- im = imread('pout.tif');
   im2 = myequalize_26(im);
   >> ("3b_26.tif") (-> image equalization algorithm, similar to "histeq(im)")
 
