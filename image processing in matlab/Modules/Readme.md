@@ -98,6 +98,9 @@ Assignment 3: (im2 = myequalize_26(im);)
   im3 = mat2gray(im3);
   im3 = im2uint8(im3);
   
+- level.m (-> uploaded by prof. Ladak -> background removal or levelling)
+
+- 
   
   
   
