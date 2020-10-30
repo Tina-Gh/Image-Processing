@@ -101,6 +101,7 @@ Assignment 3: (im2 = myequalize_26(im);)
 - level.m (-> uploaded by prof. Ladak -> background removal or levelling)
 
 - mAve.m (-> uploaded by prof. Ladak and rewritten by me -> noise reduction by image averaging)
+- imnoise(im, 'gaussian', m, var) (-> generates noisy images, the same type and size as im.)
   
   
   
