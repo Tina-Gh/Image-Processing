@@ -1,0 +1,68 @@
+Question 1:
+
+**********************************************
+Part 1(a):[upload as 1a_26.tif]
+[im2, a] = level('rice.png');
+imshow(im2)
+
+**********************************************
+Part 1(b):[explanation]
+a = 100.4443
+    0.0270
+    0.2161
+   -0.0001
+   -0.0017
+   -0.0001
+No, we don't expect the coeffients to be the same as other groups. Because each group chooses points 
+(+) for the background differently, both in different numbers and in different locations in the original 
+image. Therefore, the resulting coefficients will vary since the calculations were done with different 
+input points. 
+
+**********************************************
+Part 1(c):[upload as 1c_26.tif]
+im1 = imread('rice.png');
+plot(1:size(im1, 1), im1(:, 50), 'k--');
+plot(1:size(im2, 1), im2(:, 50), 'k-');
+plot(1:size(im1, 1), im1(:, 50), 'k--', 1:size(im2, 1), im2(:, 50), 'k-');
+
+**********************************************
+Part 1(d):[explanation] 
+Yes, the function "level.m" works correctly. As we can see in the "1c_26.tif" image, several phenomena has occured:
+1. Backgrond gray-level values decreased from 100 to something between 0 and 50 (and in some cases it got close to 0).
+2. The contrast has significantly increased, as can be seen in "1c_26.tif" image that the peak-to-peak value between the minima and the maxima has increased in the levelled image.
+3. The noise has also decreased after implementing the level.m file since the contrast has increased. 
+
+**********************************************
+Question 2:
+
+Part 2(a): [upload autolevel_26.m + add it in the text box]
+
+
+**********************************************
+Part 2(b):[upload 2b_26.tiff???]
+
+
+**********************************************
+Part 2(c): [explanation]  
+We used  M = 16 and N = 16
+The underlying fact is that, preferably, M and N should be greater than the size of the rice grains. Because if M and N is too large
+then the block size (similar to windowing) can not correctly track the background gray-levels. Furthermore, if M and N are too small 
+then we have too many points to calculate the background and not only it takes longer to run the code, but also the code may recognize 
+rice grains as the background. Hence, the error increases. 
+In general, the code should be able to correctly distinguish between the rice grains and the bakground within sufficient points.
+We chose a moderate size of M = 16 and N = 16 to satisfy the above condition. 
+
+**********************************************
+Group names: 
+
+Tina Gholami
+Andrew Ishak
+Lichuan Zhang
+
+
+
+
+
+
+
+
