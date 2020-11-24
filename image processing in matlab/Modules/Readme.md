@@ -5,7 +5,6 @@
 
 --
 
-***
 
 #### Module 2:
 
@@ -112,7 +111,6 @@ Assignment 4: (T = intermeans_26(im);)
   imshow(im2)
   >> 2b_26.tif
  
-***
  
 #### Module 6:
 
@@ -140,6 +138,5 @@ Assignment 4: (T = intermeans_26(im);)
 
 - GEO_Q2.m (-> maketform('affine', trans);) (-> All the three transformations, using "maketform()" function.)
 
-*** 
 
 #### Module 7:
