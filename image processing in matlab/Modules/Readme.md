@@ -110,6 +110,7 @@ Assignment 4: ([im2, a] =  autolevel_26(fname);)
 - [im2, a] =  autolevel_26(fname); (-> auto levelling -> so, we don't have to choose the background points (➕) ourselves. Matlab does it automatically.)
   imshow(im2)
   >> 2b_26.tif
+  
   >> a ("a" is the coefficient matrix in the background function.)
  
  
