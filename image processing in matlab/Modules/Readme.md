@@ -129,8 +129,7 @@ Assignment 4: ([im2, a] =  autolevel_26(fname);)
   
 ***
 
-- rotateImage.m (Rotation)
-  nearest.m
+- rotateImage.m, nearest.m (Rotation)
 
 ***
 
