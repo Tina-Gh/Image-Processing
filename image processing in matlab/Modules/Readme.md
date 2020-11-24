@@ -102,10 +102,29 @@ Assignment 3: (im2 = myequalize_26(im);)
 
 - mAve.m (-> uploaded by prof. Ladak and rewritten by me -> noise reduction by image averaging)
 - imnoise(im, 'gaussian', m, var) (-> generates noisy images, the same type and size as im.)
-  
-  
-  
-  
-  
+ 
+***
+Assignment 4: (T = intermeans_26(im);)
 
+- [im2, a] =  autolevel_26(fname); (-> auto levelling -> so, we don't have to choose the background points (➕) ourselves. Matlab does it automatically.)
+  imshow(im2)
+  >> 2b_26.tif
+ 
+ 
+ 
+#### Module 6:
 
+(Geometric Ops -> Translation, Rotation, and Scaling -> ✔️Gray-Level Interpolation: Backward Mapping-> Nearest Neighbor(= NN), Bilinear -> Image Registration(= aligning images))
+- imtransform()
+- imresize()
+- gl = [100.7, 47.2];
+  im = imread('pout.tif');
+  interp2(im, 47.2, 100.7, 'nearest');
+  %or Kolllllan: im(101, 47);
+  
+- rotateImage.m (Rotation)
+  nearest.m
+  
+- register.m (Image Registration)
+
+- GEO_Q2.m (-> maketform('affine', trans);)
