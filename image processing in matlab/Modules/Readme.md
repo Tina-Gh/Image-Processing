@@ -105,11 +105,12 @@ Assignment 3: (im2 = myequalize_26(im);)
 - imnoise(im, 'gaussian', m, var) (-> generates noisy images, the same type and size as im.)
  
 ***
-Assignment 4: (T = intermeans_26(im);)
+Assignment 4: ([im2, a] =  autolevel_26(fname);)
 
 - [im2, a] =  autolevel_26(fname); (-> auto levelling -> so, we don't have to choose the background points (➕) ourselves. Matlab does it automatically.)
   imshow(im2)
   >> 2b_26.tif
+  >> a ("a" is the coefficient matrix.)
  
  
 #### Module 6:
