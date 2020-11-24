@@ -112,21 +112,34 @@ Assignment 4: (T = intermeans_26(im);)
   imshow(im2)
   >> 2b_26.tif
  
- 
+***
  
 #### Module 6:
 
 (Geometric Ops -> Translation, Rotation, and Scaling -> ✔️Gray-Level Interpolation: Backward Mapping-> Nearest Neighbor(= NN), Bilinear -> Image Registration(= aligning images))
-- imtransform()
+- imtransform() (Scaling)
 - imresize()
-- gl = [100.7, 47.2];
+
+***
+
+- gl = [100.7, 47.2]; (Nearest Neighbor(NN))
   im = imread('pout.tif');
   interp2(im, 47.2, 100.7, 'nearest');
   %or Kolllllan: im(101, 47);
   
+***
+
 - rotateImage.m (Rotation)
   nearest.m
-  
+
+***
+
 - register.m (Image Registration)
 
-- GEO_Q2.m (-> maketform('affine', trans);)
+***
+
+- GEO_Q2.m (-> maketform('affine', trans);) (-> All the three transformations, using "maketform()" function.)
+
+*** 
+
+#### Module 7:
